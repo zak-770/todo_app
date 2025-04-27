@@ -1,0 +1,77 @@
+
+body{
+    font-family:Arial, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between; /* 左右にスペースを均等に配置 */
+    align-items: center; /* 縦方向（垂直）に中央揃え */
+    padding: 10px 20px; /* 上下左右に余白を追加 */
+    background-color:#FFCCE0;
+}
+.header-right{
+    display:flex;
+    gap: 1rem;
+}
+
+footer{
+    display:flex;
+    align-items: center; /* 縦方向（垂直）に中央揃え */
+    gap: 1rem;
+    
+    padding: 10px 20px; /* 上下左右に余白を追加 */
+    background-color:#FFCCE0;
+
+}
+
+
+
+/*予算入力の上下ボタンを消す（Googleブラウザ）*/
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/*予算入力の上下ボタンを消す（firefox）*/
+input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+
+
+#new-task {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#add-task {
+  margin:10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #f5d973;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+  background: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
